@@ -1,0 +1,162 @@
+/* File: style-bem-css3.css
+   IT Lecturer: Vũ Duy Linh, vdlinh@ctu.edu.vn 
+   @Created: 28-7-2022, updated:  19-03-2025	
+   Ref: https://simple-web.dev/bem-by-example-part-2 | https://dev.to/thekashey/bem-vs-css-grid-22e8 */
+
+
+/*///////////// Setup minimal global styles ////////////////*/
+*{
+   box-sizing: border-box;
+   margin: 0px;
+}
+
+html{
+   font-family: Optima, "Time New Roman", Arial, Sans-Serif;
+}
+
+body{
+   width: 95%;
+   margin: 0px auto;
+   background-color: rgba(245, 230, 237);
+}
+
+@font-face{
+   font-family: "VNI-Thufap2";
+   src: local('VNI-Thufap2'),
+      url('https://fonts.cdnfonts.com/s/25735/VNI-Thufap2 Normal.woff') format('woff');
+}
+
+.page{
+   display: grid;
+   grid-template: 'header' 'main' 'footer';
+   row-gap: 5px;
+   margin: 0 auto;
+}
+
+.page-header{
+   grid-area: header;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-image: radial-gradient(rgb(8, 11, 197), rgb(4, 109, 39), rgb(8, 11, 197));
+   border: 5px solid blue;
+   height: 100px;
+}
+
+.page-main{
+   grid-area: main;
+   border: 5px solid blue;
+}
+
+.page-footer{
+   grid-area: footer;
+   text-align: center;
+   background: url('image/banner-footer.jpg') center;
+   padding: 25px;
+   color: black;
+   font-weight: bold;
+   border: 5px solid blue;
+}
+
+.page-header__logo{
+   width: 50px;
+   height: 60%;
+   border-radius: 50%;
+   border: solid cyan;
+}
+
+.page-header__navbar{
+   flex: 8;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: solid cyan;
+   gap: 5px;
+}
+
+.page-header__search{
+   flex: 1;
+   height: 52%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: solid cyan;
+}
+
+.page-header__input{
+   flex-basis: 85%;
+   min-width: 70px;
+   height: 67%;
+}
+
+.page-header__button{
+   flex-basis: 15%;
+   height: 67%;
+}
+
+.page-header__button:hover{
+   cursor: pointer;
+}
+
+.page-header__link{
+   flex-basis: 15%;
+   text-align: center;
+   display: inline-block;
+   padding: 10px;
+   text-decoration: none;
+   font-weight: bold;
+   color: yellow;
+   border-radius: 10px;
+   background-color: gray;
+}
+
+.page-header__link--active{
+   background-color: #ff9240;
+   border-radius: 10px;
+}
+
+.page-header__link--two-words{
+   min-width: 110px;
+}
+
+.page-header__link:hover{
+   background: pink;
+}
+
+.swap-banner{
+   width: 100%;
+   position: relative;
+   height: auto;
+   border: dotted red;
+}
+
+.swap-banner__photo1,
+.swap-banner__photo2{
+   width: 100%;
+   transition: 1s ease-in-out;
+}
+
+.swap-banner__photo1{
+   position: absolute;
+}
+
+.swap-banner__photo1:hover{
+   opacity: 0.0;
+}
+
+.swap-banner__photo2:hover{
+   opacity: 1.0;
+}
+
+.main__article{
+   float: left;
+   width: 70%;
+   background-color: #11ffee00;
+   padding-left: 10px;
+   border: dashed darkcyan;
+}
+
+.main__title--primary{
+   font-family: 'VNI-Thufap2', "Times New Roman";
+   font-size: 1.5rem;
+   letter
