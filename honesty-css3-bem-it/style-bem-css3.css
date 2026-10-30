@@ -159,4 +159,76 @@ body{
 .main__title--primary{
    font-family: 'VNI-Thufap2', "Times New Roman";
    font-size: 1.5rem;
-   letter
+   letter-spacing: 2px;
+   text-shadow: 4px 4px 4px #aaa;
+   color: blue;
+   text-align: center;
+   padding-top: 10px;
+   padding-bottom: 25px;
+}
+
+.main__photo{
+   float: right;
+   margin-left: 10px;
+   width: 100%;
+   max-width: 400px;
+   height: auto;
+}
+
+.main__section{
+   text-align: justify;
+   font-weight: normal;
+   margin-left: 25px;
+   margin-right: 10px;
+}
+
+.list{
+   background: white;
+   padding: 20px;
+   margin-bottom: 15px;
+}
+
+.list__item{
+   line-height: 1.6;
+   margin-left: 15px;
+   margin-bottom: 10px;
+}
+
+.sidebar{
+   float: right;
+   width: 30%;
+   background-color: #11ffee00;
+   padding: 10px;
+   border: dashed darkcyan;
+}
+
+.sidebar__title--secondary,
+.sidebar__title--tertiary{
+   padding: 15px 0px;
+}
+
+.sidebar__list{
+   padding: 20px;
+   list-style-type: '\2727';
+   /*CSS Entity Code, https://www.htmlsymbols.xyz/geometric-symbols*/
+}
+
+.sidebar__li{
+   background: #cce5ff;
+   color: darkblue;
+   margin: 5px;
+}
+
+.sidebar__aside{
+   width: 70%;
+   float: right;
+   padding-left: 0.5rem;
+   margin-left: 0.5rem;
+   box-shadow: inset 5px 0 5px -5px #29627e;
+   font-style: italic;
+   color: #29627e;
+}
+
+.sidebar__link{
+   text-decoration: none;
+}
