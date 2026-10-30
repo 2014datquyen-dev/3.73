@@ -1,0 +1,155 @@
+<!--File: sanpham-bt2.html: using simple BEM convention in CSS to demo for my students' exercises.
+	Lecturer: Vu Duy Linh, vdlinh@[cit]ctu.edu.vn 
+	@Created: 23-Nov-2021 
+ Sử dụng:
+   1. template-v1.css để định dạng vào trang sanpham-bt1.html để tạo ra trang sanpham-bt2.html
+   2. include các phần header, footer từ trang trangchu-bt2.html vào cho nhanh
+   3. cập nhật thêm các rules cho trang này trong sanpham-v1.css -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Trang sản phẩm</title>
+    <link href="images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="template-bt2.css">
+    <link rel="stylesheet" href="sanpham-bt2.css">
+</head>
+<body class="page">    <!-- Block -->
+    <header class="page__header">     <!-- Block__Element -->
+        <a href="trangchu-bt2.html" id="#top"><img class="link__image-logo" src="images/logo.png" alt="Website logo"></a>
+        <img class="header__image-animation1" src="images/header-img1.png" alt="header-img1.png">
+        <img class="header__image-animation2" src="images/header-img2.png" alt="header-img2.png">
+        <img class="header__image-animation3" src="images/header-img3.png" alt="header-img3.png">
+        <nav class="header__nav">
+            <a class="nav__link" href="trangchu-bt2.html">Trang Chủ</a>
+            <a class="nav__link" href="gioithieu-bt2.html">Giới Thiệu</a>
+            <a class="nav__link" href="sanpham-bt2.html">Sản Phẩm</a>
+            <a class="nav__link" href="tintuc-bt2.html">Tin Tức</a>
+            <a class="nav__link" href="dangnhap-bt2.html">Đăng Nhập</a>
+            <a class="nav__link" href="dangky-bt2.html">Đăng Ký</a>
+            <a class="nav__link" href="lienhe-bt2.html">Liên Hệ</a>
+            <div class="nav__search">
+                <form class="search__form" method="get" action="#">
+                    <input class="form__input-text" type="text" placeholder="Nhập nội dung cần tìm...">
+                    <i class="fa fa-search form__icon-search"></i>
+                    <i class="fa fa-shopping-cart form__icon-cart"></i>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <main class="page__main page__main--one-column">     <!-- SV nên thay tên thẻ "main" bằng "content" chẳng hạn-->
+        <article class="main__article">
+            <h1 class="article__title article__title--primary">Sản Phẩm Truyền Thống</h1>
+            <section class="article__section">
+                <div class="section__div">
+                    <img src="images/sanpham/kiwi.jpg" alt="">
+                    <h2>Sữa Chua Vị Kiwi</h2>
+                    <p>Hương vị thơm ngon của trái Kiwi xanh, nổi tiếng của đất nước New Zealand có trong Sữa chua vị Kiwi xanh đem đến một món ăn nhẹ Siêu ngon và tốt cho hệ tiêu hóa.
+                        <span class="content__span content__span--extra-off">Thông tin hiển thị thêm (read more/less)</span>
+                        <a href="#!">Xem chi tiết</a>
+                        <span class="content__span content__span--back-ground">Số Lượng: <input type="number" min="0" max="100" size="3"/><button>Đặt hàng</button></span>
+                    </p>
+                    <!--TODO-->
+                </div>
+                <div class="section__div">
+                    <img src="images/sanpham/mango.jpg" alt="">
+                    <h2>Sữa Chua Vị Xoài</h2>
+
+                    <p>Sữa chua xoài thích hợp cho mọi lứa tuổi, vì vậy hãy để cả gia đình quây quần bên nhau cùng thưởng thức món ăn thơm ngon, bổ dưỡng này.
+                        <span class="content__span content__span--extra-off">Thông tin hiển thị thêm (read more/less)</span>
+                        <a href="#!">Xem chi tiết</a>
+                        <span class="content__span content__span--back-ground">Số Lượng: <input type="number" min="0" max="100" size="3"/><button>Đặt hàng</button></span>
+                    </p>
+                </div>
+                <div class="section__div">
+                    <img src="images/sanpham/cantaloupe.jpg" alt="">
+                    <h2>Sữa Chua Vị Dưa lưới</h2>
+
+                    <p>Trong dưa lưới chứa rất nhiều vitamin C có tác dụng làm đẹp da hiệu quả. Phụ nữ ăn sinh tố dưa lưới thường xuyên sẽ có làn da mịn màng.
+                        <span class="content__span content__span--extra-off">Thông tin hiển thị thêm (read more/less)</span>
+                        <a href="#!">Xem chi tiết</a>
+                        <span class="content__span content__span--back-ground">Số Lượng: <input type="number" min="0" max="100" size="3"/><button>Đặt hàng</button></span>
+                    </p>
+                </div>
+            </section>
+            <h1 class="article__title article__title--primary">Sản Phẩm Mới</h1>
+            <section class="article__section">
+                <div class="section__div">
+                    <img src="images/sanpham/blackberry.jpg" alt="">
+                    <h2>Sữa Chua Vị Mâm Xôi</h2>
+
+                    <p>Quả mâm xôi là loại quả ăn họ hoa hồng, có nguồn gốc từ châu Âu, Bắc Á và được trồng ở các vùng ôn đới trên toàn thế giới. Có nhiều loại, bao gồm đen, tím và vàng.
+                        <span class="content__span content__span--extra-off">Thông tin hiển thị thêm (read more/less)</span>
+                        <a href="#!">Xem chi tiết</a>
+                        <span class="content__span content__span--back-ground">Số Lượng: <input type="number" min="0" max="100" size="3"/><button>Đặt hàng</button></span>
+                    </p>
+                </div>
+                <div class="section__div">
+                    <img src="images/sanpham/strawberry.jpg" alt="">
+                    <h2>Sữa Chua Vị Dâu Tây</h2>
+
+                    <p>Dâu tây là một loài cây thân thảo có thân ngắn và các chiếc lá mọc gần với nhau. Lá có nhiều gai, bề mặt lá có nhiều lông tơ và kích thước lá có thể khác nhau ở từng giống.
+                        <span class="content__span content__span--extra-off">Thông tin hiển thị thêm (read more/less)</span>
+                        <a href="#!">Xem chi tiết</a>
+                        <span class="content__span content__span--back-ground">Số Lượng: <input type="number" min="0" max="100" size="3"/><button>Đặt hàng</button></span>
+                    </p>
+                </div>
+                <div class="section__div">
+                    <img src="images/sanpham/blueberry.jpg" alt="">
+                    <h2>Sữa Chua Vị Việt Quất</h2>
+
+                    <p>Quả việt quất chứa các dưỡng chất tốt cho sức khỏe như chất xơ, kali, folate, vitamin C và vitamin B6 (những chất hỗ trợ rất tốt cho sức khỏe của tim).
+                        <span class="content__span content__span--extra-off">Thông tin hiển thị thêm (read more/less)</span>
+                        <a href="#!">Xem chi tiết</a>
+                        <span class="content__span content__span--back-ground">Số Lượng: <input type="number" min="0" max="100" size="3"/><button>Đặt hàng</button></span>
+                    </p>
+                </div>
+            </section>
+            <h1 class="article__title article__title--primary">Sản Phẩm Trái Cây</h1>
+            <section class="article__section">
+                <div class="section__div">
+                    <img src="images/sanpham/grapes.jpg" alt="">
+                    <h2>Sữa Chua Vị Bưởi</h2>
+
+                    <p>Bưởi là một loại quả thuộc chi Cam chanh có nguồn gốc từ Đông Nam Á. Bưởi tiếng Anh gọi là Pomelo, tuy nhiên nhiều từ điển ở Việt Nam lại dịch thành grapefruit.
+                        <span class="content__span content__span--extra-off">Thông tin hiển thị thêm (read more/less)</span>
+                        <a href="#!">Xem chi tiết</a>
+                        <span class="content__span content__span--back-ground">Số Lượng: <input type="number" min="0" max="100" size="3"/><button>Đặt hàng</button></span>
+                    </p>
+                </div>
+                <div class="section__div">
+                    <img src="images/sanpham/green-apple.jpg" alt="">
+                    <h2>Sữa Chua Vị Táo Xanh</h2>
+
+                    <p>Táo xanh có hàm lượng chất xơ cao giúp tăng cường quá trình trao đổi chất của cơ thể. Bên cạnh đó, chất xơ còn giúp quá trình giải độc gan và hệ tiêu hóa.
+                        <span class="content__span content__span--extra-off">Thông tin hiển thị thêm (read more/less)</span>
+                        <a href="#!">Xem chi tiết</a>
+                        <span class="content__span content__span--back-ground">Số Lượng: <input type="number" min="0" max="100" size="3"/><button>Đặt hàng</button></span>
+                    </p>
+                </div>
+                <div class="section__div">
+                    <img src="images/sanpham/pineapple.jpg" alt="">
+                    <h2>Sữa Chua Vị Dứa</h2>
+
+                    <p>Dứa có các tên gọi khác như là khóm, thơm, khớm, gai hoặc huyền nương. Đây là một loại quả nhiệt đới. Dứa là cây bản địa của các nước Nam Mỹ.
+                        <span class="content__span content__span--extra-off">Thông tin hiển thị thêm (read more/less)</span>
+                        <a href="#!">Xem chi tiết</a>
+                        <span class="content__span content__span--back-ground">Số Lượng: <input type="number" min="0" max="100" size="3"/><button>Đặt hàng</button></span>
+                    </p>
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer class="page__footer">
+        <p class="footer__text">&copy; 2021 Bản quyền thuộc về FreeezeVN.
+            <a href="#" class="footer__link"><i class="fa fa-facebook-f"></i></a>
+            <a href="#" class="footer__link"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="footer__link"><i class="fa fa-pinterest"></i></a>
+            <a href="#top" class="footer__link">
+                <img class="link__image-go-top" src="images/top.png">
+            </a>
+        </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!--File: timkiem-bt3.html: using simple BEM convention in css to demo for my students' exercises.
+	@Lecturer: Vu Duy Linh, vdlinh@ctu.edu.vn 
+	@Created: 25-Nov-2021-->
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Tìm kiếm</title>
+	<link href="images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="template-bt2.css">
+</head>
+
+<body class="page"> <!---Block:  lớp thành phần c-body/ content-page-->
+	<header class="page__header">
+		<!-- Block__Element -->
+		<a href="trangchu-bt2.html" id="#top"><img class="link__image-logo" src="images/logo.png" alt="Website logo"></a>
+
+		<img class="header__image-animation1" src="images/header-img1.png" alt="header-img1.png">
+		<img class="header__image-animation2" src="images/header-img2.png" alt="header-img2.png">
+		<img class="header__image-animation3" src="images/header-img3.png" alt="header-img3.png">
+		<nav class="header__nav">
+			<a class="nav__link" href="trangchu-bt2.html">Trang Chủ</a>
+			<a class="nav__link" href="gioithieu-bt2.html">Giới Thiệu</a>
+			<a class="nav__link" href="sanpham-bt2.html">Sản Phẩm</a>
+			<a class="nav__link" href="tintuc-bt2.html">Tin Tức</a>
+			<a class="nav__link" href="dangnhap-bt2.html">Đăng Nhập</a>
+			<a class="nav__link" href="dangky-bt2.html">Đăng Ký</a>
+			<a class="nav__link" href="lienhe-bt2.html">Liên Hệ</a>
+			<div class="nav__search">
+				<form class="search__form" id="formSearch" method="get" action="timkiem-bt3.html">
+					<input class="form__input-text" id="myInput" type="text" name="inputKeywords"
+						placeholder="Nhập nội dung cần tìm...">
+					<i class="fa fa-search form__icon-search" id="myIconSearch"></i>
+					<i class="fa fa-shopping-cart form__icon-cart"></i>
+				</form>
+			</div>
+		</nav>
+	</header>
+	<main class="page__main page__main--one-column"> <!-- Sinh viên NÊN THAY cụm từ "main" bằng "content"-->
+		<article class="main__article">
+			<img class="article__image" src="images/trangchu/bg-home.jpg" alt="Banner bg-home.jpg">
+			<h1 class="article__title article__title--primary">Kết quả tìm kiếm</h1>
+			<section class="article__section">
+				<h2 class="section__title section__title--secondary" id="resultSearch">Tiêu đề h2</h2>
+			</section>
+		</article>
+		<!-- <aside></aside> -->
+	</main>
+	<footer class="page__footer">
+		<p class="footer__text">&copy; 2021 Bản quyền thuộc về FreeezeVN.
+			<a href="#" class="footer__link"><i class="fa fa-facebook-f"></i></a>
+			<a href="#" class="footer__link"><i class="fa fa-twitter"></i></a>
+			<a href="#" class="footer__link"><i class="fa fa-pinterest"></i></a>
+			<a href="#top" class="footer__link">
+				<img class="link__image-go-top" src="images/top.png">
+			</a>
+		</p>
+	</footer>
+	<script src="yogurt-bt3.js"></script>
+	<script>
+		window.onload = function () {
+			getQueryString();
+		}
+		disableForm("formSearch");
+		iconSearch.removeEventListener("click", searchForward);
+	</script>
+</body>
+
+</html>
